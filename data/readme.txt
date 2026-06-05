@@ -1,0 +1,4 @@
+value1_1_p value1_2_p value1_3_p
+只有1，2，3数据可用，其余中间后缀的都不用
+
+已经将这三个文件的压力峰值合成到collect_pressure_peak文件夹下（包含各个算例下的测点坐标xyz和压力峰值），各个算例的爆源信息在case_info.csv文件中
