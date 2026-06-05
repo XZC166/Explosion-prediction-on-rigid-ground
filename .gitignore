@@ -13,3 +13,12 @@ Thumbs.db
 *.log
 *.tmp
 *.temp
+
+# Generated experiment/test outputs
+_test_workspace/
+ensemble_outputs/
+sandbox_probe_dir/
+sandbox_probe_py_dir/
+python_probe.txt
+_test_workspace_probe/
+tmp*/
