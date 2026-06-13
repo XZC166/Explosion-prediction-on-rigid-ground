@@ -605,6 +605,8 @@ python mape_rf_screening.py --output-folder ensemble_outputs/mape_rf_screening_i
 
 同一套 manifest 上同时训练原始 MLP baseline 和 RF 候选，得到逐折成对结果如下：
 
+说明：这里的“原始 MLP baseline”是为了和最终 RF 候选做公平成对比较，在本轮新冻结的输入特征分层 case-wise 五折 manifest 上重新训练得到的结果；它与前文历史参考中的“原始 case-wise MLP 基线 17.23%”不是同一次数据划分下的结果。17.23% 对应早期评估口径，可作为历史基准；25.17% 对应最终正式五折复核口径，用于衡量 RF 在同一 train/test case 划分下相对 MLP 的提升。
+
 | Fold | MLP Test MAPE | MLP Test R2 | RF Test MAPE | RF Test R2 | RF - MLP MAPE | RF < 15% |
 | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | 1 | 14.10% | 0.7902 | 12.15% | 0.8874 | -1.96 | 是 |
